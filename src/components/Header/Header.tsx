@@ -9,6 +9,11 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
+      <div className={styles.logo}>
+        <span className={styles.logoHh}>hh</span>
+        <span className={styles.logoText}>.FrontEnd</span>
+      </div>
+
       <nav className={styles.navigation}>
         <NavLink
           to="/vacancies/moscow"
@@ -16,7 +21,7 @@ export const Header = () => {
             isVacancies ? styles.activeLinkWithDot : styles.link
           }
         >
-         <Text size="sm"> Вакансии FE</Text>
+          <Text size="sm">Вакансии FE</Text>
         </NavLink>
 
         <NavLink

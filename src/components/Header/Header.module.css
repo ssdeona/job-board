@@ -12,6 +12,7 @@
   padding: 0 32px;
 }
 
+/* ===== Логотип ===== */
 .logo {
   display: flex;
   align-items: center;
@@ -33,7 +34,7 @@
   color: #ffffff;
 
   font-size: 12px;
- 
+  font-weight: 700;
 }
 
 .logoText {
@@ -42,6 +43,7 @@
   font-weight: 500;
 }
 
+/* ===== Навигация ===== */
 .navigation {
   position: absolute;
 
@@ -55,6 +57,7 @@
   gap: 32px;
 }
 
+/* ===== Ссылка (неактивная) ===== */
 .link {
   display: flex;
   align-items: center;
@@ -81,6 +84,7 @@
   color: #666666;
 }
 
+/* ===== Активная ссылка (без точки) ===== */
 .activeLink {
   display: flex;
   align-items: center;
@@ -94,7 +98,7 @@
   color: #171717;
 
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 
   text-decoration: none;
 
@@ -105,14 +109,7 @@
   opacity: 0.7;
 }
 
-.activeLink::after {
-  content: '';
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #4169e1;
-  display: inline-block;
-}
+/* ===== Активная ссылка С точкой (для «Вакансии FE») ===== */
 .activeLinkWithDot {
   display: flex;
   align-items: center;
@@ -131,6 +128,10 @@
   text-decoration: none;
 
   cursor: pointer;
+}
+
+.activeLinkWithDot:hover {
+  opacity: 0.7;
 }
 
 .activeLinkWithDot::after {
